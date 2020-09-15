@@ -1,0 +1,22 @@
+<template>
+    <div class="position_relative">
+        <lightning-card title="【開発用】今日のアクションメール送信テスト" icon-name="custom:custom76">
+
+            <div>
+                <p class="slds-var-p-horizontal_medium">バッチを実施します。</p>
+            </div>
+
+            <lightning-button-group class="slds-align_absolute-center">
+                <lightning-button variant="destructive" label="バッチ実行" title="バッチテスト" onclick={executeBatch}></lightning-button>
+            </lightning-button-group>
+
+        </lightning-card>
+
+        <!-- ロード画面 -->
+        <div if:true={showSpinner}>
+            <lightning-spinner alternative-text="Loading..."></lightning-spinner>
+        </div>
+        <!-- / ロード画面 -->
+
+    </div>
+</template>
