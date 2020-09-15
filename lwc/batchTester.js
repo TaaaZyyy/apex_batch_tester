@@ -1,6 +1,6 @@
 import { LightningElement, track } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
-import executeBatch from '@salesforce/apex/XX_BatchTester.executeBatch'; // ★TODO: ここにテストするバッチを記載する
+import executeBatch from '@salesforce/apex/XX_BatchTester.executeBatch';
 
 export default class BatchTester extends LightningElement(LightningElement) {
     @track showSpinner = false;
